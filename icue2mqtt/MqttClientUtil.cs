@@ -27,9 +27,9 @@ namespace icue2mqtt
 
         }
 
-        internal const string TOPIC_CONTROL_SWITCH_CONFIG = "homeassistant/switch/icue2mtt/icue_control/config";
-        internal const string TOPIC_CONTROL_SWITCH_SET = "homeassistant/switch/icue2mtt/icue_control/set";
-        internal const string TOPIC_CONTROL_SWITCH_STATE = "homeassistant/switch/icue2mtt/icue_control/state";
+        internal const string TOPIC_CONTROL_SWITCH_CONFIG = "homeassistant/switch/icue2mqtt/icue_control/config";
+        internal const string TOPIC_CONTROL_SWITCH_SET = "homeassistant/switch/icue2mqtt/icue_control/set";
+        internal const string TOPIC_CONTROL_SWITCH_STATE = "homeassistant/switch/icue2mqtt/icue_control/state";
 
         /// <summary>
         /// Gets or sets the icue SDK.

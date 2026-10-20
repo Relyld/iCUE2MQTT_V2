@@ -9,9 +9,9 @@ namespace icue2mqtt.Models
     /// </summary>
     internal static class MqttIcueDeviceList
     {
-        internal const string TOPIC_ALL_DEVICE_CONFIG = "homeassistant/light/icue2mtt/all_icue/config";
-        internal const string TOPIC_ALL_DEVICE_SET = "homeassistant/light/icue2mtt/all_icue/set";
-        internal const string TOPIC_ALL_DEVICE_STATE = "homeassistant/light/icue2mtt/all_icue/state";
+        internal const string TOPIC_ALL_DEVICE_CONFIG = "homeassistant/light/icue2mqtt/all_icue/config";
+        internal const string TOPIC_ALL_DEVICE_SET = "homeassistant/light/icue2mqtt/all_icue/set";
+        internal const string TOPIC_ALL_DEVICE_STATE = "homeassistant/light/icue2mqtt/all_icue/state";
 
         /// <summary>
         /// The devices
@@ -44,9 +44,9 @@ namespace icue2mqtt.Models
             {
                 entityId += "_" + suffixNumber;
             }
-            string stateTopic = String.Format("homeassistant/light/icue2mtt/{0}/state", entityId);
-            string commandTopic = String.Format("homeassistant/light/icue2mtt/{0}/set", entityId);
-            string discoveryTopic = String.Format("homeassistant/light/icue2mtt/{0}/config", entityId);
+            string stateTopic = String.Format("homeassistant/light/icue2mqtt/{0}/state", entityId);
+            string commandTopic = String.Format("homeassistant/light/icue2mqtt/{0}/set", entityId);
+            string discoveryTopic = String.Format("homeassistant/light/icue2mqtt/{0}/config", entityId);
             MqttIcueDevice mqttIcueDevice = new MqttIcueDevice(icueDevice, stateTopic, commandTopic, discoveryTopic, suffixNumber);
             if (stateTopicDeviceMap.ContainsKey(stateTopic))
             {
